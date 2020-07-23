@@ -1,0 +1,281 @@
+body {
+    margin: 0; 
+    background-color: rgb(220, 239, 255);
+}
+
+header {
+    text-align: right;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+}
+
+button {
+    margin-top: 20px;
+}
+button:focus {
+    outline: none; 
+}
+
+.nav-button {
+    border: none; 
+    background-color: rgb(255, 255, 255); 
+    padding: 8px;
+}
+.nav-button:hover {
+    background-color: rgb(13, 13, 69);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.sign-up-button {
+    margin-right: 30px; 
+    margin-left: 30px; 
+    margin-top: 0;
+    width: 80px; 
+    height: 50px; 
+    border: none; 
+    color: white; 
+    background-color: rgb(13, 13, 69); 
+    border-radius: 5px; 
+}
+
+.search-button {
+    float: right; 
+    height: inherit; 
+    width: 100px; 
+    border: none; 
+    color: rgb(255, 255, 255); 
+    font-size: 16px; 
+    background-color: rgb(13, 13, 69); 
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-top: 0;
+}
+
+.menu-button {
+    border: 3px solid rgb(13, 13, 69); 
+    padding: 5px 15px;
+    background-color: rgb(255, 255, 255); 
+    color: rgb(13, 13, 69);
+    font-weight: bold; 
+    font-size: 14px;
+    display: none; 
+}
+
+.sign-up-button:hover, .search-button:hover {
+    color: rgb(13, 13, 69); 
+    background-color: rgb(220, 239, 255);
+    text-decoration: underline; 
+    font-weight: bold; 
+}
+
+.menu-button:hover {
+    background-color: rgb(13, 13, 69); 
+    color: white; 
+}
+
+main {
+    background-image: url(images/background.jpg); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding-top: 100px;
+}
+
+h1 {
+    width: 65%; 
+    margin: 0 auto;
+    color: white; 
+    font-size: 40px;
+    font-weight: bolder; 
+    margin-bottom: 25px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+h5 {
+    margin: 10px 0; 
+    font-weight: normal; 
+}
+
+div .search {
+    background-color: white; 
+    width: 65%; 
+    margin: 0 0 0 145px;
+    margin: 0 auto; 
+    height: 60px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    line-height: 3.9em;
+    padding-left: 25px;
+}
+
+i[class="fa fa-map-marker"], i[class="fa fa-calendar"] {
+    color: rgb(13, 13, 69);
+    font-size: 22px;
+    margin-right: 0;
+}
+
+i[class="fa fa-calendar"] {
+    margin-left: 300px; 
+}
+
+section[class="end-page"] {
+    display: flex; 
+    width: 75%;
+    height: 200px; 
+    margin: 0 auto;
+    margin-top: 140px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    box-sizing: border-box;
+    justify-content: space-between; 
+    border-radius: 15px;
+}
+
+div .prices {
+    width: 30%;  
+}
+
+div .prices span {
+    background-color: rgb(220, 239, 255); 
+    font-size: 14px; 
+    padding: 5px 10px;
+    box-sizing: border-box; 
+    border-radius: 15px; 
+}
+
+div .space {
+    height: 26px;
+}
+
+footer {
+    text-align: center; 
+    margin-top: 18px; 
+}
+
+footer a {
+    text-decoration: none; 
+    color: rgb(0, 0, 0);
+}
+footer a:hover {
+    color: rgb(0, 0, 255); 
+    text-decoration: underline; 
+}
+footer a:active {
+    color: rgb(0, 0, 139);
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    header, main {
+        width: 100%; 
+    }
+    
+    h1 {
+        margin-left: 20px;
+        font-size: 34px;
+    }
+    
+    div .search {
+        margin: 0 auto; 
+        width: 95%; 
+        font-size: 12px; 
+        height: 45px; 
+    }
+    
+    i[class="fa fa-calendar"], i[class="fa fa-map-marker"] {
+        font-size: 18px; 
+    }
+    
+    i[class="fa fa-calendar"] {
+        margin-left: 20px; 
+    }
+    
+    .search-button {
+        width: auto; 
+    }
+    
+    .sign-up-button {
+        margin: 0; 
+        width: 60px;
+        margin: 0 15px 0 20px; 
+    }
+    
+    .menu-button {
+        display: inline-block;
+    }
+    .nav-button {
+        padding: 3px; 
+        display: none; 
+    }
+    
+    section[class="end-page"] {
+        margin-top: 100px; 
+        height: auto; 
+        display: block; 
+        justify-content: flex-start; 
+        padding-bottom: 10px;
+    }
+    
+    div .prices {
+        width: auto; 
+        margin-bottom: 30px;
+    }
+    
+    footer {
+        height: 80px; 
+        text-align: left; 
+        padding: 20px; 
+        text-align: center; 
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+    body, header, main {
+        width: 100%; 
+    }
+    
+    header {
+        height: 75px;
+    }
+    
+    h1, div .search {
+        margin-left: 50px;  
+    }
+    
+    div .search {
+        width: 85%; 
+    }
+    
+    .search-button {
+        width: 100px; 
+    }
+    
+    i[class="fa fa-calendar"] {
+        margin-left: 55px; 
+    }
+    
+    section[class="end-page"] {
+        display: block; 
+        height: auto; 
+        width: 85%; 
+        padding-bottom: 10px; 
+    }
+    
+    div .prices {
+        margin: 10px 0 30px 20px; 
+        width: auto;  
+    }
+    
+    footer {
+        width: 80%; 
+        margin: 0 auto; 
+        margin-top: 30px; 
+    }  
+}
